@@ -107,6 +107,24 @@ begin
         for i:=1 to 7 do Write(#205); Write(#207);
         for i:=1 to 7 do Write(#205); Writeln(#188);
         Writeln;
+        Writeln('Conectorul lui Sheffer: ');
+        Write(#201);
+        for i:=1 to 8 do Write(#205); Write(#209);
+        for i:=1 to 8 do Write(#205); Write(#209);
+        for i:=1 to 8 do Write(#205); Writeln(#187);
+        Writeln(#186, 'A':5, #179:4, 'B':5, #179:4, 'A NAND B', #186);
+        Write(#199);
+        for i:=1 to 8 do Write(#196); Write(#197);
+        for i:=1 to 8 do Write(#196); Write(#197);
+        for i:=1 to 8 do Write(#196); Writeln(#182);
+        for a:= False to True do
+             for b:=False to True do
+                 Writeln(#186, a:7, #179:2, b:7, #179:2, (Not (A AND B)):7, #186:2);
+        Write(#200);
+        for i:=1 to 8 do Write(#205); Write(#207);
+        for i:=1 to 8 do Write(#205); Write(#207);
+        for i:=1 to 8 do Write(#205); Writeln(#188);
+        Writeln;
         readln;
 
 end.
